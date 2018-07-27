@@ -255,7 +255,8 @@ public class RiemannReporter extends ScheduledReporter {
                     event.ttl(ttl);
                 }
                 if (!tags.isEmpty()) {
-                    event.tags(tags);
+                    event.tags("graph");
+                    //event.tags(tags);
                 }
                 final StringBuilder sb = new StringBuilder();
                 if (prefix != null) {
